@@ -1,0 +1,4 @@
+C:\IAS\NetDebug\visualbasic_sqlite_desktop_crud.exe.config
+C:\IAS\NetDebug\visualbasic_sqlite_desktop_crud.exe
+C:\IAS\NetDebug\visualbasic_sqlite_desktop_crud.pdb
+C:\IAS\NetDebug\visualbasic_sqlite_desktop_crud.xml
