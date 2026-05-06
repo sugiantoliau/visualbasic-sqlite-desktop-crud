@@ -66,7 +66,7 @@ Partial Class frmMAIN
         Me.bt_ViewDataProduct.Location = New System.Drawing.Point(12, 211)
         Me.bt_ViewDataProduct.Name = "bt_ViewDataProduct"
         Me.bt_ViewDataProduct.Size = New System.Drawing.Size(153, 23)
-        Me.bt_ViewDataProduct.TabIndex = 69
+        Me.bt_ViewDataProduct.TabIndex = 6
         Me.bt_ViewDataProduct.Text = "View Data Product"
         Me.bt_ViewDataProduct.UseVisualStyleBackColor = True
         '
@@ -75,7 +75,7 @@ Partial Class frmMAIN
         Me.bt_DeleteDataProduct.Location = New System.Drawing.Point(12, 269)
         Me.bt_DeleteDataProduct.Name = "bt_DeleteDataProduct"
         Me.bt_DeleteDataProduct.Size = New System.Drawing.Size(153, 23)
-        Me.bt_DeleteDataProduct.TabIndex = 71
+        Me.bt_DeleteDataProduct.TabIndex = 8
         Me.bt_DeleteDataProduct.Text = "Delete Data Product"
         Me.bt_DeleteDataProduct.UseVisualStyleBackColor = True
         '
@@ -84,7 +84,7 @@ Partial Class frmMAIN
         Me.bt_UpdateDataProduct.Location = New System.Drawing.Point(12, 240)
         Me.bt_UpdateDataProduct.Name = "bt_UpdateDataProduct"
         Me.bt_UpdateDataProduct.Size = New System.Drawing.Size(153, 23)
-        Me.bt_UpdateDataProduct.TabIndex = 72
+        Me.bt_UpdateDataProduct.TabIndex = 7
         Me.bt_UpdateDataProduct.Text = "Update Data Product"
         Me.bt_UpdateDataProduct.UseVisualStyleBackColor = True
         '
@@ -116,14 +116,14 @@ Partial Class frmMAIN
         Me.tx_Price.Location = New System.Drawing.Point(71, 65)
         Me.tx_Price.Name = "tx_Price"
         Me.tx_Price.Size = New System.Drawing.Size(194, 20)
-        Me.tx_Price.TabIndex = 86
+        Me.tx_Price.TabIndex = 4
         '
         'tx_ID
         '
         Me.tx_ID.Location = New System.Drawing.Point(71, 21)
         Me.tx_ID.Name = "tx_ID"
         Me.tx_ID.Size = New System.Drawing.Size(194, 20)
-        Me.tx_ID.TabIndex = 85
+        Me.tx_ID.TabIndex = 2
         '
         'Label3
         '
@@ -148,7 +148,7 @@ Partial Class frmMAIN
         Me.tx_Name.Location = New System.Drawing.Point(71, 43)
         Me.tx_Name.Name = "tx_Name"
         Me.tx_Name.Size = New System.Drawing.Size(194, 20)
-        Me.tx_Name.TabIndex = 82
+        Me.tx_Name.TabIndex = 3
         '
         'Label1
         '
@@ -164,7 +164,7 @@ Partial Class frmMAIN
         Me.bt_AddDataProduct.Location = New System.Drawing.Point(71, 91)
         Me.bt_AddDataProduct.Name = "bt_AddDataProduct"
         Me.bt_AddDataProduct.Size = New System.Drawing.Size(194, 23)
-        Me.bt_AddDataProduct.TabIndex = 80
+        Me.bt_AddDataProduct.TabIndex = 5
         Me.bt_AddDataProduct.Text = "Add Data Product"
         Me.bt_AddDataProduct.UseVisualStyleBackColor = True
         '
@@ -173,7 +173,7 @@ Partial Class frmMAIN
         Me.bt_database_conn_check.Location = New System.Drawing.Point(12, 16)
         Me.bt_database_conn_check.Name = "bt_database_conn_check"
         Me.bt_database_conn_check.Size = New System.Drawing.Size(153, 23)
-        Me.bt_database_conn_check.TabIndex = 81
+        Me.bt_database_conn_check.TabIndex = 1
         Me.bt_database_conn_check.Text = "Check Database Connection"
         Me.bt_database_conn_check.UseVisualStyleBackColor = True
         '

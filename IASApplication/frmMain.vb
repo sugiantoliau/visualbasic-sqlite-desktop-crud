@@ -50,9 +50,11 @@ Public Class frmMAIN
 
     Sub fn_connectdb()
         Try
-            Dim dbPath As String = IO.Path.Combine(Application.StartupPath, "..", "..", "Database", "app.db")
 
-            Dim absolutePath As String = IO.Path.GetFullPath(dbPath)
+            Dim relativePath As String = IO.Path.Combine(Application.StartupPath, "Database", "app.db")
+            Dim absolutePath As String = IO.Path.GetFullPath(relativePath)
+
+
             Console.WriteLine("Database resolved to: " & absolutePath)
 
             conn = New SQLiteConnection("Data Source=" & absolutePath & ";Version=3;")
@@ -75,13 +77,8 @@ Public Class frmMAIN
             Dim adapter As New SQLiteDataAdapter(sql, conn)
             Dim dt As New DataTable()
 
-
             adapter.Fill(dt)
-
-
             DataGridView1.DataSource = dt
-
-
             DataGridView1.Columns(0).HeaderText = "ID"
             DataGridView1.Columns(1).HeaderText = "Product Name"
             DataGridView1.Columns(2).HeaderText = "Price"
@@ -103,6 +100,7 @@ Public Class frmMAIN
                 cmd.ExecuteNonQuery()
             End Using
             MsgBox("Product Added!")
+            fn_View_Data()
         Catch ex As Exception
             MsgBox("Add Error: " & ex.Message)
         Finally
@@ -122,6 +120,7 @@ Public Class frmMAIN
                 cmd.ExecuteNonQuery()
             End Using
             MsgBox("Product Updated!")
+            fn_View_Data()
         Catch ex As Exception
             MsgBox("Update Error: " & ex.Message)
         Finally
@@ -140,6 +139,7 @@ Public Class frmMAIN
                     cmd.ExecuteNonQuery()
                 End Using
                 MsgBox("Product Deleted!")
+                fn_View_Data()
             End If
         Catch ex As Exception
             MsgBox("Delete Error: " & ex.Message)
@@ -166,8 +166,9 @@ Public Class frmMAIN
         fn_Delete_Data()
     End Sub
 
-
-
+    Private Sub bt_ViewDataProduct_Click(sender As Object, e As EventArgs) Handles bt_ViewDataProduct.Click
+        fn_View_Data()
+    End Sub
 End Class
 
 
